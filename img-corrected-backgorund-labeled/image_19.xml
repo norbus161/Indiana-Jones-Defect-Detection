@@ -1,0 +1,38 @@
+<annotation>
+	<folder>img-corrected-background</folder>
+	<filename>image_19.jpg</filename>
+	<path>D:\FHHagenberg\9_Semester\DIP\DIP-Project\img-corrected-background\image_19.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>352</width>
+		<height>288</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Indiana Jones</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>145</xmin>
+			<ymin>44</ymin>
+			<xmax>289</xmax>
+			<ymax>243</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Unknown Girl</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>77</ymin>
+			<xmax>70</xmax>
+			<ymax>223</ymax>
+		</bndbox>
+	</object>
+</annotation>

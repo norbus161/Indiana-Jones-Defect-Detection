@@ -1,0 +1,38 @@
+<annotation>
+	<folder>img-corrected-background</folder>
+	<filename>image_28.jpg</filename>
+	<path>D:\FHHagenberg\9_Semester\DIP\DIP-Project\img-corrected-background\image_28.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>352</width>
+		<height>288</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Indiana Jones</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>89</xmin>
+			<ymin>92</ymin>
+			<xmax>251</xmax>
+			<ymax>226</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Unknown Guy</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>289</xmin>
+			<ymin>68</ymin>
+			<xmax>352</xmax>
+			<ymax>223</ymax>
+		</bndbox>
+	</object>
+</annotation>
