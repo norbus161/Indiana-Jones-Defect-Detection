@@ -1,7 +1,6 @@
 import cv2
 from matplotlib import pyplot as plt
 
-import os
 import imutils as utils
 import glob
 import initdata as init
@@ -38,15 +37,7 @@ for class_label, defect_type in enumerate(defects):
 
         """
         ... perform defect detection here
-        
         """
-
-        img = utils.shadding(img, imgbackground)
-        pathname = "../../img-corrected-background/" + os.path.basename(imagePath)
-        print(pathname)
-        #cv2.imwrite(pathname, img)
-###################
-
         img_processed, predicted_label = inspect_image(img, defects)
         y_pred.append(predicted_label)
         y_true.append(class_label)  # append real class label to true y's
