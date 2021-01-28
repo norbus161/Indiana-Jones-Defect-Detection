@@ -19,7 +19,7 @@ from utils import visualization_utils as vis_util
 
 
 def load_image_into_numpy_array(path):
-  """Load an image from file into a numpy array. """
+    #Load an image from file into a numpy array.
     img_data = tf.io.gfile.GFile(path, 'rb').read()
     image = Image.open(BytesIO(img_data))
     (im_width, im_height) = image.size
@@ -27,7 +27,7 @@ def load_image_into_numpy_array(path):
 
 
 def run_inference_for_single_image(model, image):
-      """Perform prediction on input image. """
+    #Perform prediction on input image.
     category_index = label_map_util.create_category_index_from_labelmap("../../config/labelmap.pbtxt", use_display_name=True)
     tf.keras.backend.clear_session()
     image = np.asarray(image)
@@ -60,28 +60,28 @@ def run_inference_for_single_image(model, image):
     return output_dict
 
 def im2double(img):
-   """ Return a image in float64 format in a range of [0, 1] """
+   #Return a image in float64 format in a range of [0, 1] """
    info = np.iinfo(img.dtype) # Get the data type of the input image
    return img.astype(np.float) / info.max # Divide all values by the largest possible value in the datatype
 
 def im2uint8(img):
-   """ This function converts the input image I1 to uint8. Input values in range [0,1] are scaled to [0,255],
-    values grater than 1 are saturated to 255 """
+   #This function converts the input image I1 to uint8. Input values in range [0,1] are scaled to [0,255],
+   #values grater than 1 are saturated to 255 """
    ttype = np.iinfo(np.uint8) # get target data type -> in this case uint8
    img = img * ttype.max
    img[img>ttype.max] = ttype.max
    return img.astype(ttype)
 
 def shadding(img, imgbackground):
-   """ This function compensates background by division """
+   #This function compensates background by division """
    imgshadded = cv2.divide(im2double(img), im2double(imgbackground))
    imgshadded = im2uint8(imgshadded)
 
    return imgshadded
 
 def imclearborder(imgBW, radius):
-   """ Suppresses structures in image I that are lighter than their surroundings and that are connected
-       to the image border. Use this function to clear the image border.  """
+   #Suppresses structures in image I that are lighter than their surroundings and that are connected
+   #to the image border. Use this function to clear the image border.  """
    imgBWcopy = imgBW.copy()
    contours, hierarchy = cv2.findContours(imgBWcopy.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
    # Get dimensions of image
@@ -116,8 +116,8 @@ def imclearborder(imgBW, radius):
 
 # bwareaopen definition
 def bwareaopen(imgBW, areaPixels):
-   """ Removes all connected components (objects) that have fewer than P pixels from the binary image BW, p
-       roducing another binary image, BW2. This operation is known as an area opening. """
+   #Removes all connected components (objects) that have fewer than P pixels from the binary image BW, p
+   #roducing another binary image, BW2. This operation is known as an area opening. """
    imgBWcopy = imgBW.copy()
    image, contours,hierarchy = cv2.findContours(imgBWcopy.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 
@@ -130,7 +130,7 @@ def bwareaopen(imgBW, areaPixels):
    return imgBWcopy
 
 def regionprops(imgbw):
-   """ find contours in image """
+   #find contours in image """
    # Given a black and white image, first find all of its contours
    contours, hierarchy = cv2.findContours(imgbw.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 
@@ -156,7 +156,7 @@ def regionprops(imgbw):
    return (len(contours)-1), area_vec[idx], [cx,cy], rect, ellipse[2]
 
 def rotate_around_point(vec, angle, point):
-    """ Rotate an image around"""
+    #Rotate an image around"""
     tx = point[0]
     ty = point[1]
 

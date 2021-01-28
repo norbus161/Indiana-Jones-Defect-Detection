@@ -2,10 +2,13 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 import cv2
 from matplotlib import pyplot as plt
 
+import tensorflow as tf
 import imutils as utils
 import glob
 import initdata as init
 import random  # only used to return random labels
+
+from utils import label_map_util
 
 # hook here your function to inspect image and return label for the detected defect
 
@@ -28,6 +31,7 @@ do_plot = False
 y_true, y_pred = [], []  
 
 #  machine learning stuff
+labelmap_path = "../../config/labelmap.pbtxt"
 category_index = label_map_util.create_category_index_from_labelmap(
     labelmap_path, use_display_name=True)
 tf.keras.backend.clear_session()
@@ -54,7 +58,7 @@ for class_label, defect_type in enumerate(defects):
 
         # 2. perform a call to the object detection network
         prediction_dict = utils.run_inference_for_single_image(model, img)
-
+        print(prediction_dict)
         # 3. analzye the prediction dictionary 
         # if prediction_dict.
 
