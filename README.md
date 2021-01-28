@@ -27,7 +27,12 @@ python model_main_tf2.py --pipeline_config_path=training/ssd_efficientdet_d0_512
 - We trained this model from scratch for our own purpose (to detect LEGO figures).
 - The COCO dataset offers a huge collection of images, with segmented objects. It's a perfect dataset for all kinds of object detection.
 - Installed cuda and cudNN drivers for gpu-based training.
+- We configured a config file before the training process
 - 15000 training steps have been done, which took us around 3 hours.
 - With Tensorboard you can watch the training process live (all kinds of loss factors).
 - We converted our model to a frozen graph file, so the prediction functionality can be easily called from python
 
+**Useful links:**
+
+- [Tensorflow 2 Object Detection Library](https://blog.roboflow.com/the-tensorflow2-object-detection-library-is-here/)
+- [EfficientDet](https://blog.roboflow.com/breaking-down-efficientdet/)
