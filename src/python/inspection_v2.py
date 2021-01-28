@@ -1,12 +1,14 @@
-from sklearn.metrics import accuracy_score, confusion_matrix
 import cv2
-from matplotlib import pyplot as plt
+import logging, os
 import tensorflow as tf
 import imutils as utils
 import glob
-import initdata as init
-import random  # only used to return random labels
+from sklearn.metrics import accuracy_score, confusion_matrix
+from matplotlib import pyplot as plt
 from utils import label_map_util
+
+logging.disable(logging.WARNING)
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
