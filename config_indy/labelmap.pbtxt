@@ -1,0 +1,40 @@
+item{
+id: 1
+name: "Hat"
+}
+item{
+id: 2
+name: "Face"
+}
+item{
+id: 3
+name: "No Head"
+}
+item{
+id: 4
+name: "Bodyprint"
+}
+item{
+id: 5
+name: "Left Leg"
+}
+item{
+id: 6
+name: "Right Leg"
+}
+item{
+id: 7
+name: "Left Arm"
+}
+item{
+id: 8
+name: "Right Arm"
+}
+item{
+id: 9
+name: "Left Hand"
+}
+item{
+id: 10
+name: "Right Hand"
+}
