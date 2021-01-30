@@ -35,11 +35,11 @@ def xml_to_csv(path):
 
 
 def main():
-    image_path = '../../img-corrected-background-labeled-train/'
-    #image_path = '../../img-corrected-background-labeled-test/'
+    #image_path = '../../indy-corrected-background-labeled-train/'
+    image_path = '../../indy-corrected-background-labeled-test/'
     xml_df = xml_to_csv(image_path)
-    xml_df.to_csv('train_data.csv', index=None)
-    #xml_df.to_csv('test_data.csv', index=None)
+    #xml_df.to_csv('train_data_indy.csv', index=None)
+    xml_df.to_csv('test_data_indy.csv', index=None)
     print('Successfully converted xml to csv.')
 
 

@@ -29,12 +29,26 @@ FLAGS = flags.FLAGS
 
 # TO-DO replace this with label map
 def class_text_to_int(row_label):
-    if row_label == 'Indiana Jones':
+    if row_label == 'Hat':
         return 1
-    elif row_label == 'Unknown Guy':
+    elif row_label == 'Face':
         return 2
-    elif row_label == 'Unknown Girl':
+    elif row_label == 'No Head':
         return 3
+    elif row_label == 'Bodyprint':
+        return 4
+    elif row_label == 'Left Leg':
+        return 5
+    elif row_label == 'Right Leg':
+        return 6
+    elif row_label == 'Left Arm':
+        return 7
+    elif row_label == 'Right Arm':
+        return 8
+    elif row_label == 'Left Hand':
+        return 9
+    elif row_label == 'Right Hand':
+        return 10
     else:
         None
 
