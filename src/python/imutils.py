@@ -27,9 +27,6 @@ def load_image_into_numpy_array(path):
 
 
 def run_inference_for_single_image(model, image):
-    #Perform prediction on input image.
-    category_index = label_map_util.create_category_index_from_labelmap("../../config/labelmap.pbtxt", use_display_name=True)
-    tf.keras.backend.clear_session()
     image = np.asarray(image)
     # The input needs to be a tensor, convert it using `tf.convert_to_tensor`.
     input_tensor = tf.convert_to_tensor(image)
