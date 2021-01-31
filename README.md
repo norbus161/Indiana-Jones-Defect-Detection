@@ -1,5 +1,7 @@
 # Indiana Jones - Defect detection
 
+##### Description:
+
 Indiana Jones defect detection based on two trained CNN networks (EfficientDet).
 The image processing pipeline contains following:
 
@@ -10,11 +12,6 @@ The image processing pipeline contains following:
 - Verification of the detected defects
 
 ![detected_feature](https://github.com/norbus161/DIP-Project/blob/main/doc/detected_features.PNG)
-
-##### Members:
-
-- Jakob Schuch
-- Patrick Würflinger
 
 ##### Main file: 
 
