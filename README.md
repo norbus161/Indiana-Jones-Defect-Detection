@@ -1,6 +1,13 @@
 # Indiana Jones - Defect detection
 
-Indiana Jones defect detection based on two trained CNN networks.
+Indiana Jones defect detection based on two trained CNN networks (EfficientDet).
+The image processing pipeline contains following:
+
+- General improvement of the scenery 
+- Segmentation of the Indiana Jones by using the first CNN
+- Cropping of the region marked by the bounding box
+- Feature detection by using the second CNN
+- Verification of the detected defects
 
 ![detected_feature](https://github.com/norbus161/DIP-Project/blob/main/doc/detected_features.PNG)
 
