@@ -1,4 +1,4 @@
-# DIP-Project
+# Indiana Jones - Defect detection
 
 Indiana Jones defect detection based on two trained CNN networks.
 
