@@ -11,7 +11,7 @@ The image processing pipeline contains following:
 - Feature detection by using the second CNN
 - Verification of the detected defects
 
-![detected_feature](https://github.com/norbus161/DIP-Project/blob/main/doc/detected_features.PNG)
+![detected_feature](https://github.com/norbus161/DIP-Project/blob/main/doc/img/detected_features.PNG)
 
 **Main file:** 
 
