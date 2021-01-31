@@ -1,5 +1,18 @@
 # DIP-Project
 
+Indiana Jones defect detection based on two trained CNN networks.
+
+![detected_feature](doc/detected_features.png)
+
+##### Members:
+
+- Jakob Schuch
+- Patrick Würflinger
+
+##### Main file: 
+
+Jupiter Notebook:  ```src/python/inspection.ipynb```
+
 **Train model:**
 
 ```shell
