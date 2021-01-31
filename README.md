@@ -11,19 +11,9 @@ The image processing pipeline contains following:
 - Feature detection by using the second CNN
 - Verification of the detected defects
 
-![detected_feature](https://github.com/norbus161/DIP-Project/blob/main/doc/img/detected_features.PNG)
-
 **Main file:** 
 
 Jupiter Notebook:  ```src/python/inspection.ipynb```
-
-**How to train the model:**
-
-```shell
-cd models/research/object_detection
-
-python model_main_tf2.py --pipeline_config_path=training/ssd_efficientdet_d0_512x512_coco17_tpu-8.config --model_dir=training --alsologtostderr
-```
 
 **Some notes for the presentation:**
 
