@@ -2,7 +2,7 @@
 
 Indiana Jones defect detection based on two trained CNN networks.
 
-![detected_feature](https://github.com/norbus161/DIP-Project/blob/main/doc/detected_features.png)
+![detected_feature](https://github.com/norbus161/DIP-Project/blob/main/doc/detected_features.PNG)
 
 ##### Members:
 
